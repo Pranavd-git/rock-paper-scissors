@@ -36,3 +36,7 @@ let userInput = prompt("Please enter your choice: ", "Rock");
 const playerSelection = userInput.toUpperCase();
 //This passes random values to computerSelection 
 const computerSelection = () => (getComputerChoice()).toUpperCase();
+
+function game(){
+    
+}
