@@ -7,9 +7,30 @@ function getComputerChoice() {
 }
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-	if (playerSelection === "ROCK" && computerSelection === "PAPER") {
-		return console.log("You Lose! Paper beats Rock");
-	}
+	if (playerSelection === "ROCK" || playerSelection === "PAPER" || playerSelection === "SCISSORS"){
+        if (playerSelection === "ROCK" && computerSelection === "PAPER"){
+            return "You Lose! Paper beats Rock";
+         }
+         else if (playerSelection === "PAPER" && computerSelection === "ROCK"){
+            return "You Win! Paper beats Rock";
+         }
+          else if (playerSelection === "PAPER" && computerSelection === "SCISSORS"){
+            return "You Lose! Scissors beats Paper";
+         }
+         else if (playerSelection === "SCISSORS" && computerSelection === "PAPER"){
+            return "You Win! Scissors beats Paper";
+         }
+         else if (playerSelection === "ROCK" && computerSelection === "SCISSORS"){
+            return "You Win! Rock beats Scissors";
+         }
+         else if (playerSelection === "SCISSORS" && computerSelection === "ROCK"){
+            return "You Lose! Rock beats Scissors";
+         }
+         else {
+             return "Draw";
+         }}
+         else {
+            return "Enter valid input."}
 }
 
 const playerSelection = "rock".toUpperCase();
