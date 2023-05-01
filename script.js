@@ -35,8 +35,11 @@ function playRound(playerSelection, computerSelection) {
 let userInput = prompt("Please enter your choice: ", "Rock");
 const playerSelection = userInput.toUpperCase();
 //This passes random values to computerSelection 
-const computerSelection = () => (getComputerChoice()).toUpperCase();
+const computerSelection = () => (getComputerChoice().toUpperCase());
 
 function game(){
-    
+    for(let i =0; i < 5; i++){
+     console.log(playRound(playerSelection, computerSelection()));
+    }
 }
+game();
