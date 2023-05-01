@@ -10,6 +10,9 @@ function getComputerChoice(){
 }
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
+    if (playerSelection === "ROCK" && computerSelection === "PAPER"){
+        console.log("You Lose! Paper beats Rock");
+    }
     
   }
 
