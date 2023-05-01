@@ -14,3 +14,4 @@ function playRound(playerSelection, computerSelection) {
   }
 
   const playerSelection = "rock".toUpperCase();
+  const computerSelection = getComputerChoice().toUpperCase();
