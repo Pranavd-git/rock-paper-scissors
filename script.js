@@ -1,20 +1,16 @@
 // This function will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 
-function getComputerChoice(){
-    let choices = ["Rock", "Paper" , "Scissors"];
-    //This variable will give random array index
-    let randomChoice = Math.floor(Math.random()*choices.length);
-    //This will return array value from above random array index 
-    choices = choices[randomChoice];
-    return choices;
+function getComputerChoice() {
+	let choices = ["Rock", "Paper", "Scissors"];
+	//This will give random array index
+	return choices[Math.floor(Math.random() * choices.length)];
 }
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === "ROCK" && computerSelection === "PAPER"){
-       return console.log("You Lose! Paper beats Rock");
-    }
-    
-  }
+	if (playerSelection === "ROCK" && computerSelection === "PAPER") {
+		return console.log("You Lose! Paper beats Rock");
+	}
+}
 
-  const playerSelection = "rock".toUpperCase();
-  const computerSelection = getComputerChoice().toUpperCase();
+const playerSelection = "rock".toUpperCase();
+const computerSelection = getComputerChoice().toUpperCase();
