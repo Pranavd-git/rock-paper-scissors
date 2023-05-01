@@ -8,3 +8,7 @@ function getComputerChoice(){
     choices = choices[randomChoice];
     return choices;
 }
+//This function will play a single round of Rock Paper Scissors
+function playRound(playerSelection, computerSelection) {
+    
+  }
