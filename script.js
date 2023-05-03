@@ -66,3 +66,4 @@ function game(){
     }
 }
 game();
+scoreKeeper();
