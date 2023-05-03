@@ -13,22 +13,28 @@ let scoreKeeper = () =>{};
 function playRound(playerSelection, computerSelection) {
 	if (playerSelection === "ROCK" || playerSelection === "PAPER" || playerSelection === "SCISSORS"){
         if (playerSelection === "ROCK" && computerSelection === "PAPER"){
-            return "You Lose! Paper beats Rock";
+            computerScore++;
+            return "Computer Wins! Paper beats Rock";
          }
          else if (playerSelection === "PAPER" && computerSelection === "ROCK"){
+            playerScore++;
             return "You Win! Paper beats Rock";
          }
           else if (playerSelection === "PAPER" && computerSelection === "SCISSORS"){
-            return "You Lose! Scissors beats Paper";
+            computerScore++;
+            return "Computer Wins! Scissors beats Paper";
          }
          else if (playerSelection === "SCISSORS" && computerSelection === "PAPER"){
+            playerScore++;
             return "You Win! Scissors beats Paper";
          }
          else if (playerSelection === "ROCK" && computerSelection === "SCISSORS"){
+            playerScore++;
             return "You Win! Rock beats Scissors";
          }
          else if (playerSelection === "SCISSORS" && computerSelection === "ROCK"){
-            return "You Lose! Rock beats Scissors";
+            computerScore++;
+            return "Computer Wins! Rock beats Scissors";
          }
          else {
              return "Draw";
@@ -39,7 +45,7 @@ function playRound(playerSelection, computerSelection) {
 let userInput = prompt("Please enter your choice: ", "Rock");
 const playerSelection = userInput.toUpperCase();
 //This passes random values to computerSelection 
-const computerSelection = () => (getComputerChoice().toUpperCase());
+const computerSelection = () => getComputerChoice();
 
 function game(){
     for(let i =0; i < 5; i++){
