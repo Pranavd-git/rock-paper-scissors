@@ -8,7 +8,10 @@ function getComputerChoice() {
 //These are helper variables and function to keep track of score and return the winner
 let playerScore = 0;
 let computerScore = 0;
-let scoreKeeper = () =>{};
+let scoreKeeper = () =>{
+   console.log(`Player Score: ${playerScore}`);
+   console.log(`Computer Score: ${computerScore}`);
+};
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
 	if (playerSelection === "ROCK" || playerSelection === "PAPER" || playerSelection === "SCISSORS"){
