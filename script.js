@@ -5,6 +5,10 @@ function getComputerChoice() {
 	//This will give random array elements
 	return choices[Math.floor(Math.random(choices.length) * 3)].toUpperCase();
 }
+//These are helper variables and function to keep track of score and return the winner
+let playerScore = 0;
+let computerScore = 0;
+let scoreKeeper = () =>{};
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
 	if (playerSelection === "ROCK" || playerSelection === "PAPER" || playerSelection === "SCISSORS"){
