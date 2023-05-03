@@ -9,18 +9,17 @@ function getComputerChoice() {
 let playerScore = 0;
 let computerScore = 0;
 let scoreKeeper = () =>{
-   console.log(`Player Score: ${playerScore}`);
-   console.log(`Computer Score: ${computerScore}`);
-
-   if(playerScore > computerScore){
-      return console.log("Winner of the game is player!"); 
-   } 
-   else if(computerScore > playerScore){
-      return console.log("Winner of the game is computer!"); 
-   }
-   else {
-      return console.log("It's a tie!"); 
-   }
+   console.log(`%cPlayer Score: ${playerScore}`, "color: #7733ff;");
+	console.log(`%cComputer Score: ${computerScore}`, "color: #ff3300;");
+	if (playerScore > computerScore){
+		return console.log("%cPlayer is the winner!", "background: green; color: white; display: block;");
+	}
+	else if  (computerScore > playerScore){
+		return console.log("%cComputer is the winner!", "background: green; color: white; display: block;"); 
+	}
+	else {
+		return console.log("%cIt's a Tie!", "background: green; color: white; display: block;");
+	}
 };
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
