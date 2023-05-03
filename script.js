@@ -2,8 +2,8 @@
 
 function getComputerChoice() {
 	let choices = ["Rock", "Paper", "Scissors"];
-	//This will give random array index
-	return choices[Math.floor(Math.random() * choices.length)];
+	//This will give random array elements
+	return choices[Math.floor(Math.random(choices.length) * 3)].toUpperCase();
 }
 //This function will play a single round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection) {
