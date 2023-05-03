@@ -13,13 +13,13 @@ let scoreKeeper = () =>{
    console.log(`Computer Score: ${computerScore}`);
 
    if(playerScore > computerScore){
-      return "Winner of the game is player!"
+      return console.log("Winner of the game is player!"); 
    } 
    else if(computerScore > playerScore){
-      return "Winner of the game is computer!"
+      return console.log("Winner of the game is computer!"); 
    }
    else {
-      return "It's a tie!"
+      return console.log("It's a tie!"); 
    }
 };
 //This function will play a single round of Rock Paper Scissors
@@ -64,6 +64,6 @@ function game(){
     for(let i =0; i < 5; i++){
      console.log(playRound(playerSelection, computerSelection()));
     }
+    scoreKeeper();
 }
 game();
-scoreKeeper();
