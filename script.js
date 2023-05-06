@@ -8,7 +8,7 @@ function getComputerChoice() {
 //These are helper variables and function to keep track of score and return the winner
 let playerScore = 0;
 let computerScore = 0;
-let scoreKeeper = () =>{
+function scoreKeeper(){
    console.log(`%cPlayer Score: ${playerScore}`, "color: #7733ff;");
 	console.log(`%cComputer Score: ${computerScore}`, "color: #ff3300;");
 	if (playerScore > computerScore){
