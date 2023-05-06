@@ -59,6 +59,8 @@ const playerSelection = userInput.toUpperCase();
 //This passes random values to computerSelection 
 const computerSelection = () => getComputerChoice();
 
+//This function will play 5 rounds of the game
+
 function game(){
     for(let i =0; i < 5; i++){
      console.log(playRound(playerSelection, computerSelection()));
